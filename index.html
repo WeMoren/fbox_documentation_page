@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Documentation Page</title>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main id="main-doc">
+    <div class="nav-section">
+      <nav id="navbar">
+        <header class="nav-header">CSS FLEXBOX DOCUMENTATION</header>
+        <i id="closeNav" class="fas fa-times"></i> 
+          <ul>
+            <li><a class="nav-link" href="#Introduction_to_flexbox">Introduction to Flexbox</a></li>
+            <li><a class="nav-link" href="#Basic_concepts">Basic Concepts</a></li>
+            <li><a class="nav-link" href="#Flexbox_properties">Flexbox Properties</a></li>
+            <li><a class="nav-link" href="#Justify_content">Justify content</a></li>
+            <li><a class="nav-link" href="#Align_items">Align items</a></li>
+            <li><a class="nav-link" href="#Flex_direction">Flex direction</a></li>
+            <li><a class="nav-link" href="#Flex_wrap">Flex wrap</a></li>
+            <li><a class="nav-link" href="#Flex_grow">Flex grow</a></li>
+            <li><a class="nav-link" href="#Flex_shrink">Flex shrink</a></li>
+            <li><a class="nav-link" href="#Flex_basis">Flex basis</a></li>
+            <li><a class="nav-link" href="#Gap">Gap</a></li>
+            <li><a class="nav-link" href="#Align_content">Align content</a></li>
+          </ul>
+      </nav>
+    </div>
+
+    <div class="right-section">
+      <section id="Introduction_to_flexbox" class="main-section">
+        <i id="openNav" class="fas fa-bars"></i>
+        <header id="header">
+          Introduction to Flexbox
+        </header>
+        <p id="para1">CSS Flexbox is a powerful layout module that enables you to create flexible and responsive layouts with ease. It provides a more efficient way to design and biuld user interfaces, making it a fundamental skill for the web developers and designers.</p>
+
+          <h2 id="header1">What is Flexbox?</h2>
+          <p id="para2">Flexbox, short for Flexible Box, is a CSS layout model that allows elements to adapt to different screen sizes, orientations and devices. It hepls you manage the layout, alignment, and distribution of elements within a container. </p>
+
+          <h2 id="header2">Why Use Flexbox</h2>
+            <ul id="unordered1">
+              <li id="list1"><em id="emx">Responsive design:</em> Flexbox makes it easy to create responsive layouts that adapt to multiple screen sizes.</li>
+              <li id="list2"><em id="emy">Simplified layout management:</em> Flexbox eliminates the need for complex float and positioning techniques.</li>
+              <li id="list3"><em id="emz">Improved alignment and spacing:</em> Flexbox provides precise control over element alignment and spacing.</li>
+              <li id="list4"><em id="emxyz">Enhanced accessibility:</em> Flexbox supports accessible layout practices.</li>
+            </ul>
+
+            <h2 id="header3">Key Flexbox Concepts</h2>
+            <p id="para4">Before diving deeper, let's get familiarized with these essential Flexbox terms:</p>
+
+            <ul id="unordered2">
+              <li id="list5">Flex Container: The parent element that contains the flexible elements.</li>
+              <li id="list6">Flex Items: The child elements within the flex container.</li>
+              <li id="list7">Main Axis: The primary axis of the flex container (horizontal or vertical).</li>
+              <li id="list8">Cross Axis: The secondary axis perpendicular to the main axis.</li>
+            </ul>
+
+            <h2 id="header4">Browser Support</h2>
+            <p id="para5">Flexbox is supported by all major browsers, including  Chrome, Firefox, Safari, Edge, and Internet Explorer (version 11 and above).</p>
+      </section>
+
+      <section id="Basic_concepts" class="main-section">
+        <header id="header5">
+          Basic Concepts
+        </header>
+        <ol id="ordered1">
+          <li id="list9">Flex Container</li>
+          <p id="para6">The flex container is a parent element that contains the flexible elements (flex items).</p>
+          <p id="para7">To create a flex container, set disply:flex or display:inline-flex on the parent element.</p>
+
+          <code id="code1" class="example-code">.container{ 
+
+                display:flex;
+             }</code>
+
+             <li id="list10">Flex Items</li>
+             <p id="para8">Flex items are the child elements within the flex container.</p>
+             <p id="para9">By default, flex items are laid out horizontally (row) or vertically (column)</p>
+              <code id="code2" class="example-code">
+               
+              </code>
+
+              <li id="list11">Axes</li>
+              <p id="para10"><em id="em1" class="bold">Main Axis</em> (horizontal or vertical): The primary axis of the flex container.</p>
+              <p id="para11"><em id="em2" class="bold">Cross Axis</em> (perpendicular to main axis): The secondary axis.</p>
+
+              <li id="list12">Directions</li>
+              <p id="para12">Flexbox supports two directions:
+                 <em id="em3" class="bold"> Row</em> (default):Items are laid out horizontally.<em id="em4" class="bold">Column</em>: Items are laid out vertically.
+              </p>
+              <p id="para12">Example:</p>  
+              <code id="code3" class="example-code">
+                .container {
+                  display:flex;
+                  flex-direction:row; or column;
+                }
+              </code>
+
+              <li id="list13">Wrap</li>
+              <p id="para13">Flex items can wrap to multiple lines:
+<em id="em5" class="bold">No Wrap</em> (default): Items do not wrap i.e they do not break into the next line even when there's no more space within the container.
+<em id="em6" class="bold">Wrap</em>: Items wrap into multiple lines when there is no more horizontal space within the container.
+              </p>
+
+               <p id="para14">Example:</p>   
+              <code id="code4" class="example-code">
+                .container {
+                  display:flex;
+                  flex-wrap: wrap;
+                }
+              </code>
+        </ol>
+      </section>
+
+      <section id="Flexbox_properties" class="main-section">
+        <header id="header5"> Flexbox Properties</header>
+      </section>
+
+      <section id="Justify_content" class="main-section">
+        <header id="header6">
+          Justify content
+        </header>
+        <p id="para15">Justify-content defines the distribution of flex items along the main axis.<p id="values">Values:</p> 
+        </p>
+        <ul id="unordered3">
+          <li id="list14">flex-start (default)</li>
+          <li id="list15">center</li>
+          <li id="list16">flex-end</li>
+          <li id="list17">space-between</li>
+          <li id="list18">space-around</li>
+          <li id="list19">space-evenly</li>
+        </ul>
+        <p id="para16">Example:</p>
+        <code id="code5" class="example-code">
+          .container {
+            display:flex;
+            justify-content:center;
+          }
+        </code>
+      </section>
+
+      <section id="Align_items" class="main-section">
+        <header id="header7">Align items</header>
+          
+        <p id="para17">The align-items property defines the alignment of flex items along the cross axis.</p>
+        <p id="para18">Values:</p>
+        <ul id="unordered4">
+          <li id="list20">flex-start</li>
+          <l1 id="list21">center (default)</li>
+          <li id="list22">flex-end</li>
+          <li id="list23">baseline</li>
+          <li id="list24">stretch</li>
+        </ul>
+        <p id="para19">Example:</p>
+        <code id="code6" class="example-code">
+          .container{
+            display: flex;
+            align-items: center;
+          }
+        </code>
+      </section>
+
+      <section id="Flex_direction" class="main-section">
+        <header id="header8">
+          Flex direction
+        </header>
+        <p id="para20">Flex-direction defines the direction of the flex items.</p>
+        <p id="para21">Values:
+          <ul id="unordered5">
+            <li id="list25">row (ddefault)</li>
+            <li id="list26">row-reverse</li>
+            <li id="list27">column</li>
+            <li id="list28">column-reverse</li>
+          </ul>
+        </p>
+        <code id="code7" class="example-code">
+          .container{ 
+          display: flex;
+            flex-direction:column;
+
+          }
+        </code>
+
+      </section>
+
+      <section id="Flex_wrap" class="main-section">
+        <header id="header9">
+          Flex wrap
+        </header>
+        <p id="para22">Flex-wrap defines whether or not, flex items wrap to multiple lines.</p>
+        <p id="para23">Values:
+          <ul id="unordered6">
+            <li id="list29">nowrap (default)</li>
+            <li id="list30">wrap</li>
+            <li id="list31">wrap-reverse</li>
+          </ul>
+        </p>
+
+        <p id="para24">Example:</p>
+        <code id="code8" class="example-code">
+          .container {
+            display: flex;
+            flex-wrap: wrap;
+          }
+        </code>
+
+      </section>
+
+      <section id="Flex_grow" class="main-section">
+        <header id="header10">
+          Flex grow
+        </header>
+        <p id="para25">Flex-grow is a property that defines the ability of a flex item to grow and occupy available space. </p>
+
+        <p id="para26">Values:
+          <ul id="unordered7">
+            <li id="list31">0 (default)</li>
+            <li id="list32">Positive number (e.g., 1, 2, 3, 4, ... )</li>
+          </ul>
+        </p>
+
+        <p id="para27">Example:</p>
+        <code id="code9" class="example-code">
+          .item {
+            flex-grow: 1;
+          }
+        </code>
+      </section>
+
+      <section id="Flex_shrink" class="main-section">
+        <header id="header11">
+          Flex shrink
+        </header>
+        <p id="para28">Flex-shrink defines the ability of a flex item to shrink when space is limited.</p>
+
+        <p id="para28">Values:
+          <ul id="unordered8">
+            <li id="list33">1 (default)</li>
+            <li id="list34">Positive numbers (e.g., 0, 1, 3,...)</li>
+          </ul>
+        </p>
+
+        <p id="para29">Example:</p>
+        <code id="code10" class="example-code">
+          .item {
+            flex-shrink:0;
+          }
+        </code>
+      </section>
+
+      <section id="Flex_basis" class="main-section">
+        <header id="header12">
+          Flex basis
+        </header>
+        <p id="para30">This property defines the initial width or height of a flex item.</p>
+
+        <p id="para31">Values:
+          <ul id="unordered9">
+            <li id="list35">Auto (default)</li>
+            <li id="list36">Length units (e.g., px, %, em)</li>
+          </ul>
+        </p>
+
+        <p id="para32">Example:</p>
+        <dode id="code11" class="example-code">
+          .item{
+            flex basis: 200px;
+          }
+        </code>
+      </section>
+
+      <section id="Gap" class="main-section">
+        <header id="header13">
+          Gap
+        </header>
+        <p id="para33">Gap defines the spacing between flex items.</p>
+        <p id="para34">Values:
+          <ul id="unordered10">
+            <li id="list37">0 (default)</li>
+            <li id="list38">Length units (e.g., px, %, em)</li>
+          </ul>
+        </p>
+        <p id="para35">Example:</p>
+        <code id="code12" class="example-code">
+          .container{
+            display: flex; 
+            gap: 20px;
+          }
+        </code>
+
+      </section>
+
+      <section id="Align_content" class="main-section">
+        <header id="header13">
+          Align content
+        </header>
+        <p id="para36">Align-content property defines the alignment of multiple lines of flex items.</p>
+
+        <p id="para37">Value:
+          <ul id="unordered11">
+            <li id="list38">flex-start</li>
+            <li id="list39">center</li>
+            <li id="list40">flex-end</li>
+            <li id="list41">space-beween</li>
+            <li id="list42">space-around</li>
+            <li id="list43">space-evenly</li>
+          </ul>
+        </p>
+        <p id="para38">Example:</p>
+        <code id="code13" class="example-code">
+          .container{
+            display: flex;
+            flex-wrap:wrap;
+            align-content:center;
+          }
+        </code>
+
+        <p id="para38">Learn more about flexbox at <a class="w3school" href="https://www.w3school.com/css/css3_flexbox_items">W3school</a></p>
+      </section>
+      <div class="footer">
+        
+      </div>
+     </div>
+
+    </main>
+
+  </body>
+</html>
