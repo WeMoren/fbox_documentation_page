@@ -186,6 +186,20 @@
     color:#cccc;
     transition: .6s ease-in-out;
   }
+
+  .wemoren{
+    color: #b6b3b3;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+  }
+  .wemoren:hover{
+    color:#e7e5e5;
+    text-decoration: underline;
+  }
+
+  .contact{
+    font-size: 10px;
+  }
   
   @media(min-width:1050px){
     .right-section{
