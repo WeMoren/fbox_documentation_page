@@ -200,6 +200,48 @@
   .contact{
     font-size: 10px;
   }
+
+  #orientation-modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+  .modal-text{
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+    padding: 20px;
+  
+  }
+
+  .fa-mobile-alt{
+    font-size: 5em;
+    transform: rotate(-90deg);
+    animation: rotateBackAndForth 4s infinite linear;
+  }
+
+  @keyframes rotateBackAndForth {
+    0%{
+      transform: rotate(-15deg);
+    }
+    50%{
+      transform: rotate(15deg);
+    }
+    100%{
+      transform:rotate(-15)
+    }
+  }
+
   
   @media(min-width:1050px){
     .right-section{
@@ -356,6 +398,25 @@
     .right-section{
       width:400px ;
     }
+  }
+
+  @media(max-width:420px){
+    #orientation-modal{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .fa-mobile-alt{
+      margin-left: 40%;
+    }
+
+    .modal-text{
+      margin-top: -95px;
+    }
+    
   }
 
   @media(max-width:407px){
